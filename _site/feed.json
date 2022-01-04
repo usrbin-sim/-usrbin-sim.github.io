@@ -1,0 +1,44 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Ephesus - Minimalist Jekyll Theme",
+    "home_page_url": "http://localhost:4000/",
+    "feed_url": "http://localhost:4000/feed.json",
+    "description": "Ephesus - Minimalist Jekyll Theme",
+    "icon": "http://localhost:4000/assets/images/apple-touch-icon.png",
+    "favicon": "http://localhost:4000/assets/images/favicon.png",
+    "expired": false,
+    
+    "author":  {
+        "name": "Yubin Sim",
+        "url": null,
+        "avatar": null
+    },
+    
+"items": [
+    
+        {
+            "id": "http://localhost:4000/test",
+            "title": "Test",
+            "summary": null,
+            "content_text": "Test post이것은 테스트 포스트#include &lt;stdio.h&gt;int main(){    printf(\"hello world\");}good 후후",
+            "content_html": "<h1 id=\"test-post\">Test post</h1><p>이것은 테스트 포스트</p><div class=\"language-c++ highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">#include &lt;stdio.h&gt;</span><span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(){</span>    <span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"hello world\"</span><span class=\"p\">);</span><span class=\"p\">}</span></code></pre></div></div><p><code class=\"language-plaintext highlighter-rouge\">good</code> 후후</p>",
+            "url": "http://localhost:4000/test",
+            
+            
+            
+            
+            
+            "date_published": "2022-01-03T00:00:00+00:00",
+            "date_modified": "2022-01-03T00:00:00+00:00",
+            
+                "author":  {
+                "name": "Yubin Sim",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        }
+    
+    ]
+}
