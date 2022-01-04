@@ -1,83 +1,60 @@
-# Site settings
-site: Ephesus
-title: Ephesus - Minimalist Jekyll Theme
-keywords: ephesus, blog
-description: >-
-  Ephesus - Minimalist Jekyll Theme
-lang: en-US
-timezone:  Europe/Istanbul
-repo: https://github.com/onepase/Ephesus # site repo [optional]
-google_verify:      XXX # Put your Google Verification here
-google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
-discus-identifier:  XXX
+title: usrbin records
+author: GitHub User
+email: usrbin.sim@gmail.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+show_excerpts: true # set to true to show excerpts on the homepage
 
-# Author settings
-author:
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+plainwhite:
   name: Yubin Sim
-  bio: Security Engineer @usrbin <br> Major in Information Security
-  picture: assets/images/my-fav2.png 
-  github: usrbin-sim # github username
-  twitter: usrbin__ # twitter username
-  #facebook: onepase # facebook username
-  instagram: usr_bin # instagram username
-  #youtube: https://www.youtube.com/channel/UCMmAto-wxBootXN91AzBiDg # youtube username
-  #linkedin: hakantorun # linkedin username
-  email: usrbin.sim@gmail.com # email adress
+  tagline: Security Engineer
+  date_format: "%b %-d, %Y"
+  sitemap: true # set to true to generate sitemap.xml content
+  search: true # set to true to enable searchbar
+  dark_mode: true # set to true to add dark mode toggle
+  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
+  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+  condensed_mobile:
+    #- home
+    - page
+    - post
+  # generate social links in footer
+  social_links:
+    twitter: usrbin__
+    github:  usrbin-sim
+    #linkedIn: in/samarsault
+    #dribbble: jekyll
+    #flickr:   jekyll
+    #instagram: jekyll
+    #pinterest: jekyll
+    #youtube: jekyll
+    #facebook: jekyll
+    #soundcloud: jekyll
+    #telegram: jekyll
+    #gitlab: jekyll
+    #email: jekyll
 
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
 
-# URL settings
-url: "usrbin-sim.github.io" # Domain Name of host. [username].github.io for github pages
-permalink: pretty
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-
-exclude:
-  - .jekyll-cache
-  - .obsidian
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
-  - CONTRIBUTING.md
+# Build settings
+#theme: plainwhite
 
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-relative-links
-paginate: 20
-paginate_path: "/page/:num"
-
-collections:
-  pages:
-    output: true
-    permalink: /:name
-  posts:
-    output: true
-    permalink: /:slug
-  
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-relative_links:
-  enabled:     true
-  collections: false
+  - jekyll-seo-tag
+#  - jekyll-feed
