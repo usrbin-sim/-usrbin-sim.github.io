@@ -1,4 +1,5 @@
-theme: plainwhite
+remote_theme: samarsault/plainwhite-jekyll
+#theme: plainwhite
 
 title: Your awesome title
 author: GitHub User
