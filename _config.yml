@@ -17,7 +17,7 @@ plainwhite:
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
-  dark_mode: true # set to true to add dark mode toggle
+  dark_mode: false # set to true to add dark mode toggle
   portfolio_image: "assets/pp.png" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
   condensed_mobile:
@@ -47,6 +47,11 @@ plainwhite:
     # - username: jekyll2
     #   instance: example.com
 
+comments:
+  provider: "disqus"
+disqus:
+    shortname: "usrbin-sim-github-io" # 블로그 댓글 기능 
+
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
@@ -58,3 +63,16 @@ plainwhite:
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
