@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
 <div class="post-container">
@@ -29,7 +28,7 @@ comments: true
     };
     (function () {
       var d = document, s = d.createElement('script');
-      s.src = 'https://usrbin-sim-github-io.disqus.com/embed.js';
+      s.src = 'https://{{ site.plainwhite.disqus_shortname }}.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
