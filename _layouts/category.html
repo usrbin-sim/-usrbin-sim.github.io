@@ -15,9 +15,6 @@ layout: default
     }
   }
 </script>
-{%- if page.title -%}
-  <ul class="post-categories">{{ page.title }}</ul>
-{%- endif -%}
 
 {{ content }}
 
@@ -49,7 +46,7 @@ layout: default
       <script>
         for(let i = 0; i < categories.length; i++){
           // var liTag = "<li >" + categories[i] + "</li>"
-          var liTag = "<li><a href=\"/category/" + categories[i] + "\">" + categories[i] + "</a></li>"
+          var liTag = "<li><a href=\"/category/" + categories[i] + "\"class=\"ctext\" style=\"text-decoration:none\">" + categories[i] + "</a></li>"
           document.write(liTag);
         }
       </script>
