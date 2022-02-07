@@ -2,6 +2,39 @@
 layout: default
 --- 
 <ul class="posts">
+  <li class="posts-labelgroup" id="posts-labelgroup">
+    <h1 id="posts-label">posts</h1>
+    {% if site.plainwhite.search %}
+    <div class="search-container">
+      <div class="search-section">
+        <i class="icon-search"></i>
+        <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in posts">
+      </div>
+      <div class="search-results" id="search-results" data-placeholder="No Results" style="display: none;"></div>
+    </div>
+    {% endif %}
+  </li>
+  <li>
+    {%- for post in site.posts -%}
+    {%- if post.categories.size > 0-%}
+        {%- for tag in post.categories -%}
+        <script>
+          getCategory("{{ tag }}")
+        </script>
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endfor -%}
+    <ul class="post-categories">
+      <script>
+        for(let i = 0; i < categories.length; i++){
+          // var liTag = "<li >" + categories[i] + "</li>"
+          var liTag = "<li><a href=\"/category/" + categories[i] + "\">" + categories[i] + "</a></li>"
+          document.write(liTag);
+        }
+      </script>
+    </ul>
+</li>
+<br><br>
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
 	<li>
