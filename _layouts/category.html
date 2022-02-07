@@ -1,7 +1,7 @@
 ---
 layout: default
 --- 
-<ul class="posts-list">
+<ul class="posts">
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
 	<li>
@@ -20,6 +20,11 @@ layout: default
         <li>{{ tag }}</li>
         {%- endfor -%}
       </ul>
+      {%- endif -%}
+    </div>
+    <div class="post">
+      {%- if site.show_excerpts -%}
+        {{ post.excerpt }}
       {%- endif -%}
     </div>
   </li>
