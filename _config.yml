@@ -76,3 +76,6 @@ defaults:
       comments: true
       share: true
       related: true
+
+category_path: "category" # <- default value
+category_layout: "category.html" # <- default value
