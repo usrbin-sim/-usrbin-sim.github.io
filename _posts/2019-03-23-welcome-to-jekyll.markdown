@@ -1,9 +1,15 @@
 ---
 layout: post
+title:  "whispergate analysis"
+date:   2022-02-08 22:25:36 +0530
+categories: Mal Rev
+---
+<!-- ---
+layout: post
 title:  "Integrating razorpay into your webapp"
 date:   2019-03-23 21:03:36 +0530
 categories: Mal
----
+--- -->
 ## 0. 요약
 
 stage1: 복구 불가능한 MBR overwrite
