@@ -15,8 +15,11 @@ pre.highlight, code {
 	tab-size: 4;
 }
 
-code.highlight {
+p > code {
+	background-color: #f4f4f4;
 	font-family: 'Consolas', Menlo, monospace;
 	line-height: 1.4em;
 	tab-size: 4;
+	font-size: 95%;
+    padding: 0.2em 0.4em;
 }
