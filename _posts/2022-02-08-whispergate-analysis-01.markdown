@@ -1,15 +1,9 @@
 ---
 layout: post
-title:  "whispergate analysis"
+title:  "whispergate analysis 01"
 date:   2022-02-08 22:25:36 +0900
 categories: Mal Rev
 ---
-<!-- ---
-layout: post
-title:  "Integrating razorpay into your webapp"
-date:   2019-03-23 21:03:36 +0530
-categories: Mal
---- -->
 ## 0. 요약
 
 stage1: 복구 불가능한 MBR overwrite
@@ -354,25 +348,3 @@ disassembler로 ghidra 사용하였다.
         한 섹터는 0x200 바이트이고 +199 LBA에 다음 데이터를 쓰니까
         
         0x2B8A00 + (0x200 * 0xC7) = 0x2D1800에 데이터가 씌어진 것을 확인할 수 있음
-<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-
-```javascript
-const Razorpay = require('razorpay');
-
-let rzp = Razorpay({
-	key_id: 'KEY_ID',
-	secret: 'name'
-});
-
-// capture request
-rzp.capture(payment_id, cost)
-	.then(function (data) {
-		return 2;
-	})
-```
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/ -->
