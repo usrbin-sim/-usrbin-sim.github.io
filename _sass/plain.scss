@@ -205,7 +205,6 @@ main {
   min-width: 150px;
 }
 .post-meta {
-  border-bottom: 1px solid #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -218,6 +217,12 @@ main {
     }
   }
 }
+
+.post-underline {
+  height: 5px;
+  border-bottom: 1px solid #333;
+}
+
 .post-link {
   text-decoration: none;
 }
