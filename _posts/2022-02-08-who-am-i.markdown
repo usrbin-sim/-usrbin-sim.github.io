@@ -1,7 +1,17 @@
 ---
 layout: post
 title:  "WHO AM I"
-date:   2022-02-08 22:25:36 +0900
+date:   2022-02-07 22:25:36 +0900
 categories: Etc
 ---
 haha 안알려주지롱
+
+왜냐면 테스트걸랑
+
+``` C
+#include <stdio.h>
+
+int main(){
+    printf("good bye world~");
+}
+```
