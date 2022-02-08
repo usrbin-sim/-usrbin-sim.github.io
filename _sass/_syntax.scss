@@ -1,6 +1,7 @@
 @import 'ext/solarized-light';
 
 .highlight {
+	// border-radius: 10px;
 	background-color: #f4f4f4;
 }
 
@@ -8,6 +9,12 @@ div.highlight {
 	padding: 5px 20px;
 }
 pre.highlight, code {
+	font-family: 'Consolas', Menlo, monospace;
+	line-height: 1.4em;
+	tab-size: 4;
+}
+
+p > code.highlight {
 	font-family: 'Consolas', Menlo, monospace;
 	line-height: 1.4em;
 	tab-size: 4;
