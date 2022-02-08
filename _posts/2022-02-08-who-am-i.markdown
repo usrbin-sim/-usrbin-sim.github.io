@@ -8,7 +8,7 @@ haha 안알려주지롱
 
 왜냐면 테스트걸랑
 
-``` C
+```c
 #include <stdio.h>
 
 int main(){
