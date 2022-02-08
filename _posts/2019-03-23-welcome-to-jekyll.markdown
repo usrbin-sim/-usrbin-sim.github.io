@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "whispergate analysis"
-date:   2022-02-08 22:25:36 +0530
+date:   2022-02-08 22:25:36
 categories: Mal Rev
 ---
 <!-- ---
