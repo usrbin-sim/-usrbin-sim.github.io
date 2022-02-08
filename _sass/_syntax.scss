@@ -1,7 +1,7 @@
 @import 'ext/solarized-light';
 
 .highlight {
-	// border-radius: 10px;
+	border-radius: 10px;
 	background-color: #f4f4f4;
 }
 
@@ -16,10 +16,11 @@ pre.highlight, code {
 }
 
 p > code {
+	border-radius: 10px;
 	background-color: #f4f4f4;
 	font-family: 'Consolas', Menlo, monospace;
 	line-height: 1.4em;
 	tab-size: 4;
-	font-size: 95%;
+	font-size: 90%;
     padding: 0.2em 0.4em;
 }

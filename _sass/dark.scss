@@ -32,6 +32,7 @@
 	@import 'ext/solarized-dark';
 	.highlight, .highlight *
 	{
+		border-radius: 10px;
 		background-color: #00080a;
 		color: #93a1a1;
 	}
@@ -44,6 +45,17 @@
 		font-family: 'Consolas', Menlo, monospace;
 		line-height: 1.4em;
 		tab-size: 4;
+	}
+
+	p > code {
+		border-radius: 10px;
+		background-color: #00080a;
+		color: #93a1a1;
+		font-family: 'Consolas', Menlo, monospace;
+		line-height: 1.4em;
+		tab-size: 4;
+		font-size: 90%;
+		padding: 0.2em 0.4em;
 	}
 
 
