@@ -1,3 +1,4 @@
+\\<!--
 ---
 layout: post
 title:  "whispergate analysis 01"
@@ -348,3 +349,5 @@ disassembler로 ghidra 사용하였다.
         한 섹터는 0x200 바이트이고 +199 LBA에 다음 데이터를 쓰니까
         
         0x2B8A00 + (0x200 * 0xC7) = 0x2D1800에 데이터가 씌어진 것을 확인할 수 있음
+
+-->ㅇ
